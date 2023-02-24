@@ -39,3 +39,38 @@ html, body {
     top:0;
     z-index: 10;
 }
+
+/* contents */
+.contents {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    text-align:center;
+}
+
+.contents__name {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.contents__job {
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 50px;
+}
+.contents__list{
+    font-size: 0;
+}
+.contents__list > li {
+    display: inline;
+}
+.contents__list > li{
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
