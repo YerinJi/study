@@ -1,5 +1,3 @@
 # STUDY
-HTML/CSS
-- [생활코딩](https://www.opentutorials.org/course/3084)
-
-
+## HTML/CSS
+- [인프런 - 만들면서 배우는 HTML/CSS]
