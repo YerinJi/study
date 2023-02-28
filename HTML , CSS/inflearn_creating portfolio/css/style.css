@@ -43,9 +43,13 @@ html, body {
 /* contents */
 .contents {
     position: absolute;
-    top: 0;
+    top: 50%;
+    left: 50%;
+    margin-left: -234px; /* 468px의 절반값을 빼준다 */
+    margin-top: -109px; /* 218px의 절반값을 빼준다. */
     z-index: 20;
     text-align:center;
+    font-family: "Malgun Gothic";
 }
 
 .contents__name {
@@ -61,16 +65,26 @@ html, body {
     color:white;
     margin-bottom: 50px;
 }
+
 .contents__list{
     font-size: 0;
 }
-.contents__list > li {
-    display: inline;
-}
+
 .contents__list > li{
     display: inline-block;
     width: 52px;
     height: 52px;
+    line-height: 52px;
     border: 1px solid white;
     border-radius: 50%;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.contents__list > li:last-child {
+    margin-right: 0;
+}
+
+.contents__list > li > a{
+    color: white;
 }
