@@ -39,4 +39,13 @@ const quotes = [
         quote : "다른 사람의 좋은 습관을 내 습관으로 만들어라.",
         author: "빌 게이츠",
     },
-]
+];
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+
+const todaysQuote = quotes[Math.floor(Math.random()* quotes.length)];
+
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
+
