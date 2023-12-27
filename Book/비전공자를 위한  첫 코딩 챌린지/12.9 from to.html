@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from to 무한회전 사각형</title>
+    <style>
+        div {
+            background-color: mediumvioletred;
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            animation: mymove 3s infinite;
+        }
+        @keyframes mymove{
+            from{
+                transform: rotate(90deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
