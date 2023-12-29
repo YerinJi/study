@@ -1,0 +1,65 @@
+/* 색상 저장하기 */
+:root{
+    --hamburger-bg:crimson;
+    --body-bg:crimson;
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    display: flex;
+    background: var(--body-bg);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hamburger-title{
+    font-size: 18px;
+    color: white;
+    padding-bottom: 10px;
+}
+.hamburger-container{
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background:var(--hamburger-bg);
+   
+}
+.hamburger,
+.hamburger::after,
+.hamburger::before{
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: white;
+    transition: 0.5s;
+}
+.hamburger::before,
+.hamburger::after{
+    content: "";
+}
+.hamburger{
+    top: 50%;
+}
+.hamburger::before{
+    top:-30px;
+}
+.hamburger::after{
+    top: 30px;
+}
+.toggle:checked ~ .hamburger::before{
+    top: 0;
+    transform: rotate(225deg);
+}
+.toggle:checked ~ .hamburger::after{
+    top: 0;
+    transform: rotate(135deg);
+}
+.toggle:checked ~ .hamburger{
+    background: var(--body-bg);
+}
+.toggle{
+    opacity: 0;
+}
