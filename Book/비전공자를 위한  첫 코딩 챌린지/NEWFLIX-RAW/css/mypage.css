@@ -23,3 +23,35 @@
     font-weight: 100;
     color: white;
 }
+/* 이어보기 */
+.continue-watching__imges img{
+    width: 200px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.continue-watching{
+    margin-bottom: 25px;
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+.continue-watching__imges{
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+}
+.continue-watching__card{
+    background-color: var(--darkpurple);
+    padding: 5px;
+    border-radius: 15px;
+}
+.continue-watching__header{
+    margin-bottom: 15px;
+}
+.continue-watching__imges li{
+    margin-left: 5px;
+}
+.continue-watching__title{
+    display: block;
+    margin: 2px 0;
+}
