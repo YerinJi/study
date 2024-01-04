@@ -55,3 +55,44 @@
     display: block;
     margin: 2px 0;
 }
+/* 찜한 목록 */
+.wishlist__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+.wishlist__header{
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+.wishlist-item{
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkpurple);
+    padding: 7px;
+    border-radius: 15px;
+}
+.wishlist-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+}
+.wishlist__title{
+    font-size: 1.2rem;
+}
+.wishlist__subtitle{
+    font-size: 0.9rem;
+}
+.wishlist-play-btn span{
+    background-color: var(--purple);
+    border-radius: 50%;
+    opacity: 0.9;
+    font-size: 3rem;
+}
+.wishlist{
+    padding: 0 20px 10px 20px;
+}
