@@ -1,0 +1,25 @@
+@import "./global.css";
+
+.user-component {
+    padding: 20px 10px;
+    flex-direction: column;
+}
+
+.user-component__profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.user-component__id{
+    padding-top: 0.3rem;
+    font-size: 1rem;
+}
+.add-profile-btn{
+    background-color: gray;
+    width: 70px;
+    height: 70px;
+    font-size: 4rem;
+    font-weight: 100;
+    color: white;
+}
