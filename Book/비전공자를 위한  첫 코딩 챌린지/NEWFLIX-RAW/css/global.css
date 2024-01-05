@@ -5,6 +5,7 @@
 @import "./reset.css";
 @import "./variable.css";
 @import "./nevigation-bar.css";
+@import "./media-query.css";
 
 *{
     box-sizing: border-box;
@@ -38,4 +39,10 @@ input{
 }
 .position-relative{
     position: relative;
+}
+
+@media (min-width:768px){
+    body{
+        padding: 0 10vw;
+    }
 }
