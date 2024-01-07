@@ -1,0 +1,40 @@
+@import "./global.css";
+
+html,body {
+    overflow: hidden;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+.login-form input{
+    padding: 15px 0;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    appearance: none;
+    background-color: var(--background-purple);
+    font-size: 1em;
+}
+.login-form input:not([type="submit"]){
+    color: white;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.login-form input:focus{
+    border-color: white;
+}
+
+/* 접속하기 버튼 */
+.login-form input[type="submit"]{
+    color: white;
+    background-color: var(--darkpurple);
+    border-radius: 20px;
+    margin-top: 2rem;
+    transition: background-color 0.2s ease-in-out;
+}
+.login-form input[type="submit"]:active{
+    background-color: var(--purple);
+}

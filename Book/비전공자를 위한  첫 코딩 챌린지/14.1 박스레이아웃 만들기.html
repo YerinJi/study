@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스레이아웃 만들기</title>
+    <style>
+        body,html{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            width: 310px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: wheat;
+            margin-bottom: 10px;
+        }
+        main{
+            display: flex;
+        }
+        nav{
+            background-color: #d0b98c;
+            height: 200px;
+            width: 100px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        article{
+            background-color: #d0b98c;
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+        }
+        footer{
+            background-color: rgb(200, 196, 156);
+            height: 50px;
+            width: 310px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header></header>
+        <main>
+            <nav></nav>
+            <article></article>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
