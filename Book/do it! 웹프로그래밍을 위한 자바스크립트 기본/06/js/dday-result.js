@@ -12,9 +12,16 @@ var passedDay = Math.round(passedTime/(1000*60*60*24)); //밀리초를 날짜 �
 
 document.querySelector('#accent').innerHTML = passedDay + "일";
 
-var future = toFirst + 100 * (1000*60*60*24); //처음 만난 날에 100일 더함
-var someday = new Date(future); //future 값을 사용해 Date 객체의 인스턴스를 만든다.
-var year = someday.getFullYear();
-var month = someday.getMonth();
-var date = someday.getDate();
-document.querySelector('#date100').innerHTML = year + "년 " +month +"월 " + date + "일" ;
+
+function calcDate(days) {
+    var future = toFirst + days * (1000*60*60*24); //처음 만난 날에 100일 더함
+    var someday = new Date(future); //future 값을 사용해 Date 객체의 인스턴스를 만든다.
+    var year = someday.getFullYear();
+    var month = someday.getMonth();
+    var date = someday.getDate();
+    document.querySelector('#date' + days).innerHTML = year + "년 " +month +"월 " + date + "일" ;
+}
+calcDate(100);
+calcDate(200);
+calcDate(365);
+calcDate(500);
