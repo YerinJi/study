@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+  }
+  
+  a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #8492a6;
+    text-decoration: none;
+  }
+  
+  /* ▼ WHERE YOUR CODE BEGINS */
+ul {
+    list-style: none;
+    display: flex;
+    width: 540px;
+    height: 54px;
+  }
+
+li {
+  padding:20px 15px;
+}
+  
+li a:hover{
+    color: #2860e1;
+    font-weight: 500;
+    border-bottom: 3px solid #2860e1;
+  }
