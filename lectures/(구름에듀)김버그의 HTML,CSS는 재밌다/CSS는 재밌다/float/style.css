@@ -6,6 +6,7 @@
   body {
     font-family: "Roboto", sans-serif;
     letter-spacing: -0.02em;
+    background-color: #000;
   }
   
   a {
@@ -16,19 +17,61 @@
   }
   
   /* ▼ WHERE YOUR CODE BEGINS */
-ul {
+/* ul {
     list-style: none;
-    display: flex;
+    display: block;
     width: 540px;
     height: 54px;
   }
 
 li {
-  padding:20px 15px;
+  float: left;
+  padding:20px 30px;
+  
 }
   
 li a:hover{
     color: #2860e1;
-    font-weight: 500;
     border-bottom: 3px solid #2860e1;
   }
+ul::after{
+  content:"";
+  clear:left;
+} */
+
+/* 강의 속 코드 */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tab-menu-item{
+  float: left;
+  margin-right: 16px;
+}
+
+.tab-menu::after{
+  content: '';
+  clear: left;
+  display: block;
+}
+
+.tab-menu-item a{
+  display: block;
+  padding: 16px 20px;
+}
+
+.tab-menu {
+  border-bottom: 1px solid #E5EAEF;
+  max-width: 540px;
+  background-color: #fff;
+}
+
+.tab-menu-item.selected {
+  border-bottom: 2px solid #2850E1;
+}
+
+.tab-menu-item.selected a{
+  color: #2760E1;
+  font-weight: 500;
+}
