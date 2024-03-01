@@ -1,0 +1,151 @@
+
+.like-button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* ▼ WHERE YOUR CODE BEGINS */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.sr-only{
+    position: absolute;
+    z-index: -100;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0 ;
+}
+
+.card{
+    display: flex;
+    width: 840px;
+    padding: 24px;
+}
+
+.card-image{
+    position: relative;
+    background-image: url(./assets/img-house.jpg);
+    width: 300px;
+    height: 200px;
+    margin-right: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 24px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.card-image.vertical img{
+    width: 100%;
+    height: auto;
+}
+
+.card-image.horizontal img{
+    width: auto;
+    height: 100%;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.card-content{
+    flex-grow: 1;
+}
+
+.plus-badge {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 4px;
+    background-color: #92174D;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 6px;
+    font-weight: 500;
+    line-height: 1.428571428571429;
+    text-transform: uppercase;
+}
+
+.like-button{
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    background-image: url(./assets/icon-favorite.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 24px 24px;
+    cursor: pointer;
+}
+
+.property-type span{
+    font-size: 16px;
+    line-height: 1.25;
+    color: #7D858F;
+}
+
+.property-rate{
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.property-rate strong{
+    color: #151B26;
+    font-weight: 400;
+}
+
+.property-rate span{
+    color: #7D858F;
+}
+
+.property-rate::before{
+    display: inline-block;
+    content: '';
+    position:relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-image: url(./assets/icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.card-title{
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color:#151B26;
+}
+
+.property-detail{
+    font-size: 14px;
+    line-height: 1.142857142857143;
+    color: #7D858F;
+}
+
+.property-detail dd span::after {
+    content: '·';
+    margin: 0 8px;
+}
+
+.property-detail dd span:last-child::after{
+    content: '';
+    margin: 0;
+}
+
+.property-detail div:first-child{
+    margin-bottom: 8px;
+}
