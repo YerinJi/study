@@ -1,0 +1,78 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+*{
+    box-sizing:  border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Mulish", sans-serif;
+}
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 216px;
+}
+
+.loading-title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.333333333333333;
+    color: #151B26;
+    animation-name: fOpacity;
+    animation-duration: 1600ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.progress-bar{
+    position: relative;
+    background-color: #E5EAEF;
+    width: 300px;
+    height: 12px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.progress-bar-gauge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color: #13CE66;
+    height: 12px;
+    animation-name: gauge;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    border-radius: 100px;
+    animation-timing-function: ease-out;
+}
+
+@keyframes gauge {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    90%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes fOpacity {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
