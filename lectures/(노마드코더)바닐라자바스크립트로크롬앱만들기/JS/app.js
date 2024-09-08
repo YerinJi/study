@@ -10,6 +10,7 @@ function onLoginSubmit(event) {
   event.preventDefault(); //이벤트의 기본 행동이 발생되지 않도록 막는 것. preventDefault
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
+  localStorage.setItem("username", username);
   greeting.innerHTML = `Hello ${username}`;
   //greeting.innerHTML = "Hello " + username;
   greeting.classList.remove(HIDDEN_CLASSNAME);
