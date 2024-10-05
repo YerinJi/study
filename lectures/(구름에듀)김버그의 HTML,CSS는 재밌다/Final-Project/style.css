@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Reset CSS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  box-shadow: none;
+  outline: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  /* 24 / 16 = 1.5 */
+  color: #2b292d;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+
+.title {
+  padding-top: 154px;
+  padding-bottom: 24px;
+}
+/* >= 768px (Desktop) */
+@media screen and (min-width: 768px) {
+  /* Recet CSS */
+  p {
+    font-size: 22px;
+    line-height: 1.36363636;
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 1.028571428571429;
+  }
+  .title {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+  .service-button-group {
+    margin-top: 32px;
+  }
+  .service-button {
+    width: 160px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 1.5555555;
+  }
+}
+
+/* Custom Grid System -Fix container with */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+.section1 {
+  background-color: #fdded8;
+}
+.section1-des {
+  text-align: center;
+}
+.service-button-group {
+  padding-top: 24px;
+  padding-bottom: 154px;
+  text-align: center;
+}
+.service-button {
+  width: 140px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.05em;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.apply {
+  background-color: #3040c4;
+  color: #fff;
+}
+.learn {
+  background-color: #fff;
+  color: #3040c4;
+}
