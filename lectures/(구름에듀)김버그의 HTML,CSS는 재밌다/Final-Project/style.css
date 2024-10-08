@@ -44,320 +44,70 @@ p {
   color: #2b292d;
   letter-spacing: -0.01em;
 }
+span {
+  display: inline-block;
+}
 
-h1 {
+/* landing */
+.landing {
+  background-color: #fdded8;
+}
+
+.landing-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-content h1 {
   font-size: 40px;
-  font-weight: bold;
   line-height: 1;
   letter-spacing: -0.05em;
   text-align: center;
+  margin-bottom: 24px;
+  font-weight: 700;
 }
 
-.title {
-  padding-top: 154px;
-  padding-bottom: 24px;
-}
-/* >= 768px (Desktop) */
-@media screen and (min-width: 768px) {
-  /* Recet CSS */
-  p {
-    font-size: 22px;
-    line-height: 1.36363636;
-  }
-
-  h1 {
-    font-size: 70px;
-    line-height: 1.028571428571429;
-  }
-  .title {
-    padding-top: 120px;
-    padding-bottom: 32px;
-  }
-  .service-button-group {
-    margin-top: 32px;
-  }
-  .service-button {
-    width: 160px;
-    height: 56px;
-    font-size: 18px;
-    line-height: 1.5555555;
-  }
-}
-
-/* Custom Grid System -Fix container with */
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 960px !important;
-  }
-}
-
-.section1 {
-  background-color: #fdded8;
-}
-.section1-des {
+.landing-content p {
+  line-height: 1.375;
   text-align: center;
+  margin-bottom: 24px;
 }
-.service-button-group {
-  padding-top: 24px;
-  padding-bottom: 154px;
-  text-align: center;
+
+.button-group {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.service-button {
+
+.fill-btn {
+  display: inline-block;
   width: 140px;
   height: 48px;
-  font-weight: bold;
+  border-radius: 2px;
+  background-color: #3040c4;
+  padding: 12px;
   font-size: 15px;
+  font-weight: 700;
   line-height: 1.6;
   letter-spacing: -0.05em;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-}
-.apply {
-  background-color: #3040c4;
+  text-align: center;
   color: #fff;
+  transition: opacity 300ms ease-in-out;
 }
-.learn {
+
+.fill-btn:hover {
+  opacity: 0.5;
+}
+
+.fill-btn.inverted {
   background-color: #fff;
   color: #3040c4;
 }
-h2 {
-  font-size: 22px;
-  line-height: 1.363636363636364;
-  letter-spacing: -0.04em;
-  font-weight: bold;
-}
 
-.section2 {
-  background-color: #f4f5f7;
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
-.sub-title {
-  padding-bottom: 16px;
-  padding-left: 0;
-}
-
-.sub-des {
-  padding-bottom: 40px;
-}
-
-/* section3 */
-@media screen and (min-width: 768px) {
-  .section3 {
-    padding-bottom: 96px;
-  }
-  .section3-title {
-    text-align: center;
-  }
-  .section3-des {
-    text-align: center;
-    margin-bottom: 72px;
-  }
-  .campus {
-    background-color: #3141c5;
-  }
-  .campus > p {
-    color: #fff;
-  }
-  .program {
-    padding-bottom: 16px;
-  }
-}
-.section3 {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.program {
-  color: #009b4d;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 8px;
-}
-.section3-title,
-.section4-title {
-  font-size: 34px;
-  line-height: 1.058823529411765;
-  font-weight: bold;
-}
-.section3-des {
-  padding-top: 24px;
-  padding-bottom: 12px;
-}
-.section3-img {
-  text-align: center;
-  width: 290px;
-  height: 291px;
-  padding-top: 20px;
-  border-radius: 8px;
-  box-shadow: 10px 10px 50px -40px rgba(0, 0, 0, 0.5);
-}
-.section3-img > p {
-  font-size: 18px;
-  line-height: 1.33333333;
-  letter-spacing: -0.02em;
-  font-weight: bold;
-}
-.full-time {
-  width: 142.21px;
-  height: 195px;
-}
-
-/* section4 */
-.section4 {
-  padding-bottom: 80px;
-}
-.curriculum {
-  color: #0189d1;
-  font-weight: bold;
-  padding-bottom: 8px;
-}
-.section4-des {
-  padding-top: 24px;
-  padding-bottom: 32px;
-}
-.section4-des2 {
-  padding-bottom: 40px;
-}
-
-.curriculum-img > img {
-  width: 450px;
-  height: 450px;
-}
-.curriculum-button {
-  width: 160px;
-  height: 56px;
-  border-radius: 2px;
-  border: none;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.555555555555556;
-  letter-spacing: -0.05em;
-  padding: 0;
-}
-.curriculum-button-m {
-  width: 140px;
-  height: 48px;
-  border: 0;
-  border-radius: 2px;
-  font-weight: bold;
-  margin-bottom: 48px;
-  font-size: 15px;
-  line-height: 1.6;
-  letter-spacing: -0.05em;
-}
-@media screen and (min-width: 768px) {
-  .section4 {
-    padding-top: 80px;
-  }
-  .section4-des {
-    padding-bottom: 72px;
-  }
-  .section4-des2 {
-    padding-top: 24px;
-  }
-}
-/* section5 */
-
-.section5 {
-  background-color: #f2f8fa;
-  padding-top: 40px;
-  text-align: center;
-  padding-bottom: 40px;
-}
-.CTAImage {
-  width: 191px;
-  height: 190px;
-}
-.img-box {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  width: 290px;
-  height: 240px;
-  text-align: center;
-}
-.section5-title {
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  text-align: center;
-}
-.section5-des {
-  padding-bottom: 24px;
-}
-.mail-input {
-  width: 290px;
-  height: 48px;
-  border: none;
-  padding: 12px 16px;
-}
-.mail-button {
-  width: 290px;
-  height: 48px;
-  border: none;
-  border-radius: 2px;
-  background-color: #3040c4;
-  color: #fff;
-  font-weight: bold;
-  font-size: 15px;
-}
-.mail-des {
-  padding-top: 8px;
-  color: #7b7b7e;
-}
-.mail-des > a {
-  color: #3040c4;
-  border-bottom: 1px solid #3040c4;
-}
-@media screen and (min-width: 768px) {
-  .section5 {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  .img-box {
-    width: 370px;
-    height: 300px;
-  }
-  .section5-title,
-  .section5-des {
-    text-align: left;
-  }
-  .CTAImage {
-    width: 287px;
-    height: 285px;
-  }
-  .input-div {
-    display: flex;
-  }
-  .mail-input {
-    width: 362px;
-    height: 56px;
-  }
-  .mail-button {
-    width: 160px;
-    height: 54px;
-  }
-  .mail-des {
-    text-align: left;
-    font-size: 14px;
-  }
-}
-/* section6 */
-.section6 {
-  padding-top: 24px;
-  padding-bottom: 16px;
-}
-.section6 > div > span {
-  font-size: 14px;
-  color: #807f81;
-  padding-bottom: 8px;
-}
-@media screen and (min-width: 768px) {
-  .section6 > div > span {
-    padding: 8px;
-  }
+.fill-btn:first-child {
+  margin-right: 8px;
 }
