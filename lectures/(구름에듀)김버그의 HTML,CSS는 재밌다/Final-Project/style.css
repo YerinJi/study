@@ -227,3 +227,74 @@ span {
   font-size: 15px;
   line-height: 1.466666667;
 }
+
+/* Banner Page */
+.banner {
+  padding: 40px 0;
+  background-color: #f2f8fa;
+  text-align: center;
+}
+.banner .col-12:first-child {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.banner .col-12:first-child img {
+  width: auto;
+  height: 195px;
+}
+
+.banner .col-12 h1 {
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.banner .col-12 p {
+  margin-bottom: 24px;
+}
+
+.banner .col-12 .submit-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .col-12 input {
+  display: block;
+  margin-bottom: 8px;
+  padding: 12px 16px;
+  width: 290px;
+  height: 48px;
+  border: none;
+  color: #7b7b7e;
+}
+.banner .col-12 button {
+  cursor: pointer;
+  width: 290px;
+  height: 48px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #3040c4;
+  border-radius: 2px;
+  padding: 12px auto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: -0.05em;
+  color: #fff;
+  transition: opacity 300ms ease-in-out;
+}
+.banner .col-12 button:hover {
+  opacity: 0.5;
+}
+
+.banner .col-12 span {
+  font-size: 13px;
+  line-height: 1.5384615385;
+  color: #7b7b7e;
+}
+.banner .col-12 span a {
+  text-decoration: underline;
+  color: #3040c4;
+}
