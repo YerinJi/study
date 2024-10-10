@@ -298,3 +298,21 @@ span {
   text-decoration: underline;
   color: #3040c4;
 }
+
+/* footer */
+.footer-link-list {
+  padding: 24px 15px;
+}
+.footer-link-list a {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #807f81;
+}
+.footer-link-list li:last-child a {
+  padding-right: 0;
+  margin-bottom: 0;
+}
