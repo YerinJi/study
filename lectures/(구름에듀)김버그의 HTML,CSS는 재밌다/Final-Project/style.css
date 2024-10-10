@@ -185,3 +185,45 @@ span {
 .program-card:hover strong {
   color: #fff;
 }
+
+/* Curriculum */
+.curriculum .article-category {
+  color: #0189d1;
+}
+
+.curriculum .col-md-6:nth-child(2) {
+  display: none;
+}
+
+.curriculum .col-12:first-child a {
+  display: block;
+  margin-bottom: 48px;
+  padding-top: 12px;
+  width: 140px;
+  height: 48px;
+  background-color: #3141c5;
+  border-radius: 2px;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #fff;
+  transition: opacity 300ms ease-in-out;
+}
+
+.curriculum .col-12:first-child a:hover {
+  opacity: 0.5;
+}
+.curriculum .col-12 p {
+  margin-bottom: 32px;
+}
+
+.curriculum .col-12:last-child p {
+  margin-bottom: 0;
+}
+
+.curriculum-desc {
+  font-size: 15px;
+  line-height: 1.466666667;
+}
