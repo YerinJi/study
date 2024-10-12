@@ -1,0 +1,10 @@
+{
+  "description": "",
+  "scripts": {
+    "sass": "node-sass -wr styles/main.scss style.css",
+    "node-sass": "node-sass"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
