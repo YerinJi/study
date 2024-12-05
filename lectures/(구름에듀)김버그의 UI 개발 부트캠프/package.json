@@ -1,8 +1,8 @@
 {
   "description": "",
   "scripts": {
-    "sass": "node-sass -wr styles/main.scss style.css",
-    "node-sass": "node-sass"
+    "node-sass": "node-sass",
+    "sass": "node-sass styles/main.scss style.css"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
