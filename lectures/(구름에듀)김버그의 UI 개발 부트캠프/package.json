@@ -2,7 +2,7 @@
   "description": "",
   "scripts": {
     "node-sass": "node-sass",
-    "sass": "node-sass styles/main.scss style.css"
+    "sass": "node-sass  -wr --source-map true styles/main.scss style.css"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
