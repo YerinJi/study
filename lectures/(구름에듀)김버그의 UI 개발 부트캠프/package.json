@@ -4,6 +4,10 @@
     "node-sass": "node-sass",
     "sass": "node-sass  -wr --source-map true styles/main.scss style.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YerinJi/study/lectures/(구름에듀)김버그의 UI 개발 부트캠프.git"
+  },
   "dependencies": {
     "node-sass": "^9.0.0"
   }
