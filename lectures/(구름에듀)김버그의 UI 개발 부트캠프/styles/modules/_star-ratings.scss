@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 %star-ratings {
+=======
+%star-rating-base {
+>>>>>>> eaaf4705040fa720442dcff0ab0f10d52d7a74d1
   @include flexbox(start);
 
   .ic-star {
@@ -11,21 +15,37 @@
 }
 
 .star-rating-13 {
+<<<<<<< HEAD
   @extend %star-ratings;
+=======
+  @extend %star-rating-base;
+>>>>>>> eaaf4705040fa720442dcff0ab0f10d52d7a74d1
   font-size: 13px;
 }
 
 .star-rating-16 {
+<<<<<<< HEAD
   @extend %star-ratings;
+=======
+  @extend %star-rating-base;
+>>>>>>> eaaf4705040fa720442dcff0ab0f10d52d7a74d1
   font-size: 16px;
 }
 
 .star-rating-20 {
+<<<<<<< HEAD
   @extend %star-ratings;
+=======
+  @extend %star-rating-base;
+>>>>>>> eaaf4705040fa720442dcff0ab0f10d52d7a74d1
   font-size: 20px;
 }
 
 .star-rating-24 {
+<<<<<<< HEAD
   @extend %star-ratings;
+=======
+  @extend %star-rating-base;
+>>>>>>> eaaf4705040fa720442dcff0ab0f10d52d7a74d1
   font-size: 24px;
 }

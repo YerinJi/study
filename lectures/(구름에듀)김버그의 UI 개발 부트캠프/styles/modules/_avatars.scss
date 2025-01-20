@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 %avatar {
   display: block;
   overflow: hidden;
@@ -5,6 +6,11 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+=======
+%avatar-base {
+  display: block;
+  overflow: hidden;
+>>>>>>> eaaf4705040fa720442dcff0ab0f10d52d7a74d1
   border-radius: 50%;
 
   img {
@@ -15,6 +21,7 @@
   }
 }
 
+<<<<<<< HEAD
 .avatar-32 {
   @extend %avatar;
   width: 32px;
@@ -26,3 +33,16 @@
   width: 24px;
   height: 24px;
 }
+=======
+.avatar-24 {
+  @extend %avatar-base;
+  width: 24px;
+  height: 24px;
+}
+
+.avatar-32 {
+  @extend %avatar-base;
+  width: 32px;
+  height: 32px;
+}
+>>>>>>> eaaf4705040fa720442dcff0ab0f10d52d7a74d1
